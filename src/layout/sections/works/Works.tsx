@@ -6,7 +6,7 @@ import socialImg from "../../../assets/images/proj-1.webp";
 import timerImg from "../../../assets/images/proj-2.webp";
 import { Container } from "../../../components/Container";
 import React, { useState } from "react";
-import { S } from "./Woks_Styles";
+import { S } from "./Works_Styles";
 import { motion, AnimatePresence } from "framer-motion";
 
 const tabsItems: Array<{
@@ -78,17 +78,17 @@ export const Works: React.FC = () => {
 				/>
 				<FlexWrapper justify={"space-between"} align={"flex-start"} wrap="wrap">
 					<AnimatePresence>
-						{filteredWorks.map((w, i) => {
+						{filteredWorks.map((w) => {
 							return (
 								<motion.div
-									style={{ width: "330", flexGrow: 1, maxWidth: "540" }}
+									style={{ width: "330px", flexGrow: 1, maxWidth: "540px" }}
 									layout
 									initial={{ opacity: 0 }}
 									animate={{ opacity: 1 }}
 									exit={{ opacity: 0 }}
 									key={w.id}
 								>
-									<Work key={w.id} title={w.title} text={w.text} src={w.src} />;
+									<Work key={w.id} title={w.title} text={w.text} src={w.src} />
 								</motion.div>
 							);
 						})}

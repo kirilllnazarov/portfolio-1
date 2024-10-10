@@ -1,7 +1,7 @@
 import { Link } from "../../../../components/link/Link";
 import { Button } from "../../../../components/Button";
 import React from "react";
-import { S } from "../Woks_Styles";
+import { S } from "../Works_Styles";
 
 type WorkType = {
 	title: string;
